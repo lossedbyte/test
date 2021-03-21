@@ -1,43 +1,4 @@
-<h1>Hello, world!4</h1>
+<h1>Hello, world!5</h1>
 <script>
   alert(document.cookie + " || " + getCookie('bindicator'));
-  //location.assign("http://www.stackoverflow.com");
-  
-  if(getCookie('bindicator') == 'value'){
-  alert('1| ' + document.cookie);
-  setCookie('bindicator', '', {});
-  }
-  else {
-  alert('2| ' + document.cookie);
-  setCookie('bindicator', 'value', {});
-  location.assign("https://stackoverflow.com";
-  }
-  
-  function setCookie(name, value, options = {}) {
-
-  options = {
-    path: '/',
-  };
-
-  if (options.expires instanceof Date) {
-    options.expires = options.expires.toUTCString();
-  }
-
-  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-  for (let optionKey in options) {
-    updatedCookie += "; " + optionKey;
-    let optionValue = options[optionKey];
-    if (optionValue !== true) {
-      updatedCookie += "=" + optionValue;
-    }
-  }
-
-  document.cookie = updatedCookie;
-}
-  
-  function getCookie(name) {
-    var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-    return v ? v[2] : null;
-}
 </script>
