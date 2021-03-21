@@ -1,5 +1,14 @@
 <h1>Hello, world!5</h1>
 <script>
-  localStorage.setItem('myCat', 'Tom');
-  alert(document.cookie + " || " + history.length + " || " + localStorage.getItem('myCat'));
+  localStorage.setItem('bindicator', 'Tom');
+  alert(document.cookie + " || " + history.length + " || " + localStorage.getItem('bdindicatorrrr'));
+    if(localStorage.getItem('bindicator') == 'value'){
+  alert('1| ' + document.cookie);
+  setCookie('bindicator', '', {});
+  }
+  else {
+  alert('2| ' + document.cookie);
+  setCookie('bindicator', 'value', {});
+  //window.location.assign("example.com");
+  }
 </script>
