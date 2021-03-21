@@ -1,4 +1,6 @@
 <h1>Hello, world!5</h1>
 <script>
-  alert(document.cookie + " || " + history.length);
+  localStorage.setItem('myCat', 'Tom');
+  let cat = localStorage.getItem('myCat');
+  alert(document.cookie + " || " + history.length+ + " || " + cat);
 </script>
